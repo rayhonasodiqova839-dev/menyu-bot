@@ -3,7 +3,7 @@ import sqlite3
 import threading
 from datetime import datetime
 from flask import Flask, request, jsonify
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo
 from telegram.ext import (
     Application,
     CommandHandler,
@@ -25,7 +25,7 @@ if not BOT_TOKEN:
         "Local'da: export BOT_TOKEN=... yoki .env fayl"
     )
 
-ADMIN_ID = int(os.environ.get("ADMIN_ID", "8298685754"))
+ADMIN_ID = int(os.environ.get("ADMIN_ID", "8537782289"))
 
 # Kanal/guruhlarni shu yerga qo'shasiz
 CHANNELS = [
@@ -170,7 +170,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [
             InlineKeyboardButton(
                 "🌐 RBU Gaming",
-                url="https://claude.ai/public/artifacts/868b1872-ee18-4ca9-8de8-58da72eaab6d"
+                web_app=WebAppInfo(
+                    url="https://rayhonasodiqova839-dev.github.io/menyu-bot/"
+                )
             )
         ],
         [
