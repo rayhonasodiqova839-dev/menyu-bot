@@ -16,7 +16,7 @@ from telegram.ext import (
 # =========================================================
 
 # Token endi kodda emas — Fly.io secrets orqali beriladi
-BOT_TOKEN = "8287856383:AAF2mKHyEHqlL01LRyRGZ6IgmIGYRjyr4L0"
+BOT_TOKEN = "8287856383:  "8287856383:AAGP6SXpvHc8o3yTqPb0T-cik9uaqkbgCrs"
 
 if not BOT_TOKEN:
     raise RuntimeError(
