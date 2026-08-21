@@ -16,7 +16,7 @@ from telegram.ext import (
 # =========================================================
 
 # Token endi kodda emas — Fly.io secrets orqali beriladi
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
+BOT_TOKEN = os.environ.get("8287856383:AAF2mKHyEHqlL01LRyRGZ6IgmIGYRjyr4L0")
 
 if not BOT_TOKEN:
     raise RuntimeError(
